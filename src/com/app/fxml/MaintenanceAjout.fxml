@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import org.controlsfx.control.textfield.CustomTextField?>
+
+<AnchorPane prefHeight="640.0" prefWidth="1229.0" styleClass="popup-pane" stylesheets="@../styles/ThemeTwo2.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.app.controls.MaintenanceAjoutControl">
+   <children>
+      <HBox layoutX="1.6" layoutY="1.6" prefHeight="34.0" prefWidth="923.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Pane onMouseDragged="#drag" onMousePressed="#press" onMouseReleased="#releas" prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+            <Button mnemonicParsing="false" onAction="#returnToOwner" prefHeight="35.0" prefWidth="52.0" styleClass="btn-Retour" stylesheets="@../styles/ThemeTwo2.css">
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/icons8_macos_close_25px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="4.8" layoutY="278.0" prefHeight="66.0" prefWidth="1150.0" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="3.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#ajouterMn" prefHeight="42.0" prefWidth="142.0" styleClass="btn" text="Ajouter">
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/icons8_add_25px_3.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </HBox>
+      <VBox alignment="TOP_CENTER" layoutX="4.8" layoutY="37.0" prefHeight="236.0" prefWidth="1229.0" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="-2.0">
+         <children>
+            <CustomTextField fx:id="txtActif" prefHeight="38.0" prefWidth="545.0" promptText="Actif ..." styleClass="popup-text-in" VBox.vgrow="NEVER">
+               <VBox.margin>
+                  <Insets bottom="20.0" left="300.0" right="300.0" top="10.0" />
+               </VBox.margin>
+            </CustomTextField>
+            <ComboBox fx:id="comboTyMn" prefHeight="38.0" prefWidth="655.0" promptText="Type Maintenance ..." styleClass="popup-text-in">
+               <VBox.margin>
+                  <Insets bottom="20.0" left="300.0" right="300.0" />
+               </VBox.margin>
+            </ComboBox>
+            <CustomTextField fx:id="txtIntiMn" prefHeight="38.0" prefWidth="545.0" promptText="Intitule ..." styleClass="popup-text-in" VBox.vgrow="NEVER">
+               <VBox.margin>
+                  <Insets left="300.0" right="300.0" />
+               </VBox.margin>
+            </CustomTextField>
+            <HBox alignment="CENTER" prefHeight="78.0" prefWidth="1141.0" spacing="30.0" VBox.vgrow="NEVER">
+               <children>
+                  <DatePicker fx:id="dateDeb" prefHeight="38.0" prefWidth="306.0" promptText="Date Debut ...">
+                     <styleClass>
+                        <String fx:value="date-picker-display-node" />
+                        <String fx:value="popup-text-in" />
+                     </styleClass>
+                  </DatePicker>
+                  <DatePicker fx:id="dateTermine" prefHeight="38.0" prefWidth="306.0" promptText="Date Termine ...">
+                     <styleClass>
+                        <String fx:value="date-picker-display-node" />
+                        <String fx:value="popup-text-in" />
+                     </styleClass>
+                  </DatePicker>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <HBox alignment="CENTER" layoutX="7.199999999999999" layoutY="273.0" prefHeight="288.0" prefWidth="1145.0" spacing="20.0" AnchorPane.bottomAnchor="73.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0">
+         <children>
+            <TableView fx:id="tableOperation" prefHeight="288.0" prefWidth="1134.0">
+              <columns>
+                <TableColumn fx:id="idCol" prefWidth="122.39998006820679" text="OPERATION" />
+                <TableColumn fx:id="initCol" prefWidth="116.0" text="INTITULE" />
+                  <TableColumn fx:id="dateCol" prefWidth="113.60003662109375" text="DATE " />
+                  <TableColumn fx:id="TypeCol" prefWidth="154.40005493164062" text="TYPE" />
+                  <TableColumn fx:id="panneCol" prefWidth="205.5999755859375" text="PANNE " />
+                  <TableColumn fx:id="Operateurcol" prefWidth="174.40008544921875" text="OPERATEUR" />
+                  <TableColumn fx:id="controlsCol" prefWidth="100.800048828125" />
+              </columns>
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+            </TableView>
+            <Button mnemonicParsing="false" onAction="#ajouterOperation" prefHeight="46.0" prefWidth="37.0" styleClass="btn">
+               <graphic>
+                  <ImageView fitHeight="32.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/icons8_add_25px_3.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

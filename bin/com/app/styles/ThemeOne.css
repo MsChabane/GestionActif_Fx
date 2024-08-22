@@ -1,0 +1,97 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+
+/*
+ * #32cfa0
+ * #88e4c9
+ * #acdfd0
+ * #22c795
+ */
+ .body{
+ 	-fx-background-color:#d7e1e0;
+ }
+ .header{
+ 	-fx-background-color: #22c795;
+ }
+ .table-view {
+ 	-fx-background-color: white;
+ 	-fx-border-color: linear-gradient(to right ,#22c795, #88e4c9);
+ 	-fx-border-width: 1px 2px 2px 2px ;
+	-fx-border-radius: 16px;
+	-fx-background-radius: 16px;
+ }
+ .table-view .cell {
+	-fx-background-color: rgb(255,255,255,0);
+	-fx-text-fill: #fff;
+	-fx-wrap-text: true;
+}
+.table-view .cell:selected {
+	-fx-background-color: #22c795;
+	-fx-text-fill: #09093b;
+	-fx-background-radius: 16px;
+	-fx-border-radius: 16px;
+}
+.table-view .cell:hover {
+	-fx-background-color:#22c795;
+	-fx-text-fill: #09093b;
+	-fx-cursor: hand ;
+	-fx-background-radius: 10px;
+	-fx-border-radius: 1px;
+}
+.column-header{	
+	-fx-background-color: rgb(255,255,255,0);
+	-fx-alignment: center;
+	-fx-column-halignment: center;	
+	-fx-text-fill: #000;
+}
+.column-header-background{
+	-fx-background-color:linear-gradient(to right ,#22c795, #88e4c9);
+	-fx-background-radius: 16px;
+	-fx-border-radius: 16px;
+	}
+
+.column-header Label
+{
+	-fx-text-fill:#000;
+}
+.btn{
+	-fx-background-radius: 16px;
+	-fx-border-radius: 16px;
+	-fx-background-color: linear-gradient(to right ,#22c795, #88e4c9);
+	-fx-border-width: 2px;
+	-fx-border-color:  linear-gradient(to right ,#22c795, #88e4c9);
+	-fx-font-size: 16px;
+	-fx-font-weight: bold;
+}
+.btn:hover{
+	-fx-background-color: white;
+	-fx-border-width: 2px;
+	-fx-cursor:hand ;
+}
+.btn:pressed{
+	-fx-border-color: black;
+}
+.btn-Retour{
+	-fx-background-color: rgb(255,255,255,0);
+}
+.btn-Retour:hover{
+	-fx-background-color: rgb(150,12,1);
+}
+.btn-Retour:pressed{
+	-fx-background-color: rgb(255,12,1);
+}
+.text-in{
+	-fx-padding: 0 0.0 0 10px;
+	-fx-border-color: linear-gradient(to right ,#22c795, #88e4c9);
+	-fx-background-color: tranperent;
+	
+	-fx-background-radius: 16px;
+	-fx-border-radius: 16px;
+	-fx-font-size: 16px;
+	-fx-font-weight: bold;
+}
+.text-in:hover{
+	-fx-border-color: white;
+	-fx-background-color: white;
+}
+ 

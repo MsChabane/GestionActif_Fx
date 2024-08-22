@@ -1,0 +1,214 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+
+/*
+ * beige -->#fff5d7;
+ * 
+ * yellow -->#feb300
+ * 
+ * pink --> #ff5e6c
+ * 
+ * bleu #0f2862
+ * dark blue 091f36
+ * gray #4f5f76
+ * 
+ */
+ 
+ 
+/*
+ * header bg :#065f89
+ * body bg : #c6dfe6
+ */
+ 
+  .body{
+ 	-fx-background-color: #c6dfe6;
+ 
+ 	
+ }
+ .header{
+ 	-fx-background-color: #091f36;
+ 	-fx-background-color: #065f89;
+ }
+ .table-view {
+ 	-fx-background-color: rgb(255,255,255,0);
+ 	-fx-border-color:#091f36;
+ 	-fx-border-width: 2px ;
+	-fx-border-radius: 16px;
+	-fx-background-radius: 16px;
+	
+ }
+ .table-view .cell {
+	-fx-background-color: rgb(255,255,255,0);
+	-fx-text-fill: #000;
+	-fx-wrap-text: true;
+	-fx-font-weight: bold;
+	-fx-alignment: center;
+	-fx-pref-height: 40px;
+}
+.table-view .cell:selected {
+	-fx-background-color: rgb(255,255,255,0.6);
+	-fx-background-radius: 16px;
+	-fx-border-radius: 16px;
+	
+}
+.table-view .button {
+	-fx-background-radius: 16px;
+	-fx-border-radius: 16px;
+}
+.table-view .button:hover {
+	-fx-border-color: #09093b;
+}
+.table-view .button:pressed {
+	-fx-background-color: #09093b;
+}
+.table-view .deleteBtn {
+	-fx-background-color: red;
+	-fx-border-color: red;
+}
+.table-view .editBtn {
+	-fx-background-color: rgb(0,255,0);
+	-fx-border-color: rgb(0,255,0);
+}
+
+.table-view .cell:hover {
+	-fx-background-color:rgb(255,255,255,0.2);
+	-fx-text-fill: #09093b;
+	-fx-cursor: hand ;
+	-fx-background-radius: 10px;
+	-fx-border-radius: 1px;
+}
+.column-header{	
+	-fx-background-color: rgb(255,255,255,0);
+	-fx-alignment: center;
+	-fx-column-halignment: center;	
+	-fx-text-fill: #000;
+	
+}
+.column-header-background{
+	-fx-background-color:#c6dfe6;
+	-fx-background-radius: 16px;
+	-fx-border-radius: 16px;
+}
+.column-header Label
+{
+	-fx-text-fill: #0f2862;
+}
+.title{
+	-fx-alignment: center ;
+	-fx-text-fill: #fff;
+	-fx-spacing: 12px;
+	-fx-padding: 0 12px 0.0 12px;
+	-fx-font-size: 20px;
+	-fx-font-weight: bold; 
+}
+.btn{
+	-fx-background-radius: 16px;
+	-fx-border-radius: 16px;
+	
+	-fx-background-color:#065f89;
+	-fx-border-width: 2px;
+	
+	-fx-border-color: #065f89;
+	-fx-font-size: 16px;
+	-fx-font-weight: bold;
+	-fx-text-fill: #fff;
+}
+.btn:hover{
+	-fx-background-color:#0f2899;
+	-fx-border-color: #0f2899;
+	-fx-cursor:hand ;
+}
+.btn:pressed{
+	-fx-background-color:#0f28cc;
+	-fx-border-color: #0f28cc;
+}
+.btn-Retour{
+	-fx-background-color: rgb(255,255,255,0);
+}
+.btn-Retour:hover{
+	-fx-background-color: rgb(150,12,1);
+}
+.btn-Retour:pressed{
+	-fx-background-color: rgb(255,12,1);
+}
+.text-in{
+	-fx-padding: 0 0.0 0 10px;
+	-fx-border-color: #0f2862;
+	-fx-border-width: 1;
+	-fx-background-color: rgb(255,255,255,0);
+	-fx-background-radius: 16px;
+	-fx-border-radius: 16px;
+	-fx-font-size: 16px;
+	-fx-font-weight: bold;
+	-fx-text-fill: #0f2862;
+}
+
+.popup-pane{
+	-fx-background-color: #c6dff7;
+	-fx-border-color: #000;
+	-fx-border-width: 2 ;
+	
+}
+.popup-text-in{
+	-fx-background-color: #065689;
+	-fx-text-fill: #fff;
+	-fx-font-size: 16px;
+	-fx-border-width: 1.5 ;
+	-fx-border-color: #065689;
+	-fx-font-weight: bold;
+}
+.popup-text-in:focused{
+	-fx-border-color: #fff;
+}
+.text-area .content{
+	-fx-background-color:  #065689;
+}
+.combo-box .list-cell{
+ 	-fx-background-color: rgb(255,255,255,0.1);
+ 	-fx-text-fill: #000;
+ }
+.combo-box .list-cell:hover{
+ 	-fx-font-size: 17px;
+ }
+ .combo-box-base .arrow{
+	-fx-background-color: #fff;
+ }
+.date-picker-display-node{
+	-fx-background-color: #065689;
+	-fx-text-fill: #fff;
+}
+.date-picker .arrow{
+	-fx-background-color: #fff;
+}
+.check-box{
+	-fx-text-fill: #fff;
+	-fx-font-size: 16px;
+	-fx-font-weight: bold;
+	-fx-background-color: #065689;
+	-fx-padding:   10px 20px;
+}
+
+
+
+.date-picker .arrow-button{
+	-fx-background-color: rgb(255,255,255,0);
+}
+ .notification-bar>.pane{
+	-fx-background-color: #065689;
+	-fx-border-width:  1px;
+	-fx-border-color: #fff;
+	
+}
+.notification-bar>.pane .label  {
+	-fx-text-fill: #fff;
+	-fx-font-size: 16px;
+	-fx-font-weight: bold;
+}
+
+.notification-bar>.pane .close-button:hover{
+	-fx-background-color: rgb(150,12,1);
+}
+.notification-bar>.pane .close-button:pressed {
+	-fx-background-color: rgb(255,12,1);
+}
+ 
